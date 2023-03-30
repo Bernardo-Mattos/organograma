@@ -5,15 +5,6 @@ import ListaSuspensa from "../ListaSuspensa";
 import "./formulario.css";
 
 const Formulario = (props) => {
-  const times = [
-    "Programação",
-    "Front-end",
-    "Data Science",
-    "Devops",
-    "UX e Design",
-    "Mobile",
-    "Inovação e Gestão",
-  ];
 
   const [nome, setNome] = useState("");
   const [cargo, setCargo] = useState("");
@@ -54,7 +45,7 @@ const Formulario = (props) => {
           valor={imagem}
           aoAlterado={(valor) => setImagem(valor)}
         />
-        <ListaSuspensa obgt={true} label="Time" itens={times} />
+        <ListaSuspensa obgt={true} label="Time" itens={props.times} />
         <Botao texto="Criar Card" />
       </form>
     </section>
