@@ -1,2 +1,2 @@
-# Organograma ReactJs
-## Formação ReactJs Alura
+## Organograma ReactJs
+Formação ReactJs Alura
